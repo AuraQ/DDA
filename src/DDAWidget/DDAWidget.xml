@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="DDAWidget.widget.DDAWidget" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>DDA Widget</name>
+    <description>This widget is supposed to help you with your DDA compliance</description>
+
+    <icon />
+
+    <properties>
+        <property key="altTextEnabled" type="boolean" defaultValue="true">
+            <caption>Enabled</caption>
+            <category>Alternative text</category>
+            <description>Enable alternative text</description>
+        </property>
+        <property key="altEntities" type="object" isList="true" required="false">
+            <caption>Alt text objects</caption>
+            <category>Alternative text</category>
+            <description>Objects that contain the alternative text for screen-readers, and corresponding classes used to identify the html items that need the aforementioned alt text</description> 
+            <properties>
+                <property key="altClass" type="string">
+                    <caption>Class</caption>
+                    <category>Alternative text</category>
+                    <description></description>
+                </property>
+                <property key="altText" type="string">
+                    <caption>Text</caption>
+                    <category>Alternative text</category>
+                    <description></description>
+                </property>
+            </properties>
+        </property>
+        <property key="altEnabled" type="boolean" defaultValue="true">
+            <caption>Use 'alt' property</caption>
+            <category>Alternative text</category>
+            <description></description>
+        </property>
+        <property key="ariaLabelEnabled" type="boolean" defaultValue="false">
+            <caption>Use 'aria-label' property</caption>
+            <category>Alternative text</category>
+            <description></description>
+        </property>
+        <property key="titleEnabled" type="boolean" defaultValue="false">
+            <caption>Use 'title' property</caption>
+            <category>Alternative text</category>
+            <description></description>
+        </property>
+        <property key="altOverwrite" type="boolean" defaultValue="false">
+            <caption>Overwrite existing text</caption>
+            <category>Alternative text</category>
+            <description>If checked, the properties selected (alt, aria-label and/or title) will be overwritten if they are already assigned</description>
+        </property>        
+        <property key="roleEnabled" type="boolean" defaultValue="true">
+            <caption>Enable role assignment</caption>
+            <category>Roles</category>
+            <description>Enables assignment of roles by giving any element a class of "elementrole-YourRole"</description>
+        </property>
+        <property key="roleOverwrite" type="boolean" defaultValue="true">
+            <caption>Overwrite role</caption>
+            <category>Roles</category>
+            <description>If assigned, already assigned roles to the elements in question will be overwriten</description>
+        </property>
+        <property key="fieldsetEnabled" type="boolean" defaultValue="true">
+            <caption>Enable fieldset and legend assignment</caption>
+            <category>Fieldsets</category>
+            <description>Enables conversions to fieldsets and legend wrappers. Check the documentation for more information.</description>
+        </property>        
+        <property key="errorEnabled" type="boolean" defaultValue="true">
+            <caption>Enable linking</caption>
+            <category>Validation messages</category>
+            <description>Adds a described by or labelled by attribute to a validated entity.</description>
+        </property>
+        <property key="errorDescribedBy" type="boolean" defaultValue="true">
+            <caption>Use aria-describedby</caption>
+            <category>Validation messages</category>
+            <description></description>
+        </property>
+        <property key="errorLabelledBy" type="boolean" defaultValue="true">
+            <caption>Use aria-labelledby</caption>
+            <category>Validation messages</category>
+            <description></description>
+        </property>
+        <property key="radioEnabled" type="boolean" defaultValue="true">
+            <caption>Radio labels</caption>
+            <category>Labels</category>
+            <description>Links radio button labels to the input element</description>
+        </property>
+        <property key="customLabelsEnabled" type="boolean" defaultValue="true">
+            <caption>Custom labels</caption>
+            <category>Labels</category>
+            <description>Converts elements with custom-label classes to labels, and links them to the next element. Check the documentation for more information.</description>
+        </property>
+    </properties>
+</widget>
+
